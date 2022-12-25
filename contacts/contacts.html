@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Blog</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div><a href="../index.html">logo</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a class="link" href="../index.html">Home</a></li>
+                <li><a class="link active" href="">contacs</a></li>
+            </ul>
+
+        </nav>
+
+        <form class="form-search">
+            <input type="search" name="search" placeholder="Введите запрос..." class="form-search__search">
+            <input type="image" src="../images/70-703296_magnifying-glass-icon-transparent.png">
+        </form>
+    </header>
+
+
+    <div class="container">
+        <h1 class="mb-2 text-center">заполните форму</h1>
+        <form class="form_contact">
+            <div class="mb-2 form_contact__data">
+                <input type="text" name="user_name" placeholder="Введите имя..." required>
+                <input type="password" name="user_password" placeholder="Введите пароль..." required>
+                <input type="email" name="user_email" placeholder="Введите email..." required>
+                <input type="number" name="User_number" placeholder="Введите ваш возраст..." min="4" max="100">
+            </div>
+
+            <div>
+                <label for="color">Ваш любимый цвет:</label>
+                <input type="color" name="color" id="color">
+            </div>
+
+            <div>
+                <label for="vacation">Когда начинается ваш отпуск:</label>
+                <input type="date" name="vacation" id="vacation">
+            </div>
+
+            <div>
+                <label for="pnoto_place">Фото вашего курорта:</label>
+                <input type="file" name="pnoto_place" id="pnoto_place">
+            </div>
+
+            <div>
+                <b>Ваш любимый курорт:</b>
+                <br>
+                <label for="maldives">Maldives</label>
+                <input type="checkbox" name="resort" value="maldives" id="maldives">
+                <br>
+                <label for="monaco">Monaco</label>
+                <input type="checkbox" name="resort" value="monaco" id="monaco">
+                <br>
+                <label for="turkey">Turkey</label>
+                <input type="checkbox" name="resort" value="turkey" id="turkey">
+            </div>
+
+            <div>
+                <b>Ваше любимое растение:</b>
+                <br>
+                <label for="the_venus_flycatcher">The Venus Flycatcher</label>
+                <input type="radio" name="radio" value="the_venus_flycatcher" id="the_venus_flycatcher" checked>
+                <br>
+                <label for="flowers">Flowers</label>
+                <input type="radio" name="radio" value="flowers" id="flowers">
+                <br>
+                <label for="berries">Berries</label>
+                <input type="radio" name="radio" value="berries" id="berries">
+            </div>
+            <div>
+                <textarea name="user_about" placeholder="Напиши про себя" class="form-contact__about"></textarea>
+            </div>
+
+            <div>
+                <button type="reset" class=" btn btn-danger">Отчистить</button>
+                <button type="submit"class=" btn btn-success">Отправить</button>
+            </div>
+        </form>
+
+    </div>
+
+    <footer class="footer">
+        <p>Копирование запрещено</p>
+    </footer>
+</body>
+
+</html>
