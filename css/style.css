@@ -70,6 +70,10 @@ input[required]::placeholder{
     color: rgb(255, 255, 128);
 }
 
+.logo {
+    width: 100px;
+    gap: 8px;
+}
 
 .header {
     position: fixed;
